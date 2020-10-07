@@ -18,7 +18,7 @@ export default ({ data, location }) => (
     <SEO title={post.title} description={post.excerpt} />
     <main>
       <Styled.h1>{post.title}</Styled.h1>
-      <Img fluid={data.file.childImageSharp.fluid} />
+      <Img fluid={data.me.childImageSharp.fluid} />
       <Styled.p
         css={css({
           pt: 3,
@@ -33,7 +33,7 @@ export default ({ data, location }) => (
       <Styled.p>
         I'm currently involved in a data science research which aims to leverage
         free floating bike sharing systems' data sources to study the mobility
-        of Padova (my hometown).
+        of Padova (my hometown) - <a href={data.ic2s2.publicURL}>more details</a>.
       </Styled.p>
       <Styled.p>
         In my spare time, I'm a mentor at{" "}
@@ -59,12 +59,15 @@ export default ({ data, location }) => (
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "0E0A8013.jpg" }) {
+    me: file(relativePath: { eq: "0E0A8013.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
+    }
+    ic2s2: file(relativePath: { eq: "Mobike-IC2S2-Poster.jpg" }) {
+      publicURL
     }
   }
 `
