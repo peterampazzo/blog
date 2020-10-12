@@ -5,6 +5,6 @@ export default () => (
   <Fragment>
     Hi, I'm <Styled.a href="/about/">Pietro</Styled.a>.
     <br />
-    Computer Science Student
+    MSc Student in Human-Centered AI
   </Fragment>
 )

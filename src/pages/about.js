@@ -27,13 +27,14 @@ export default ({ data, location }) => (
         Hi, I'm Pietro.
       </Styled.p>
       <Styled.p>
-        I study Computer Science at Ca' Foscari University of Venice. In the
-        last few years I worked as Full-Stack Developer.
+        I'm a MSc Student in Human-Centered AI at Technical University of
+        Denmark. In the last few years I worked as Full-Stack Developer.
       </Styled.p>
       <Styled.p>
         I'm currently involved in a data science research which aims to leverage
         free floating bike sharing systems' data sources to study the mobility
-        of Padova (my hometown) - <a href={data.ic2s2.publicURL}>more details</a>.
+        of Padova (my hometown) -{" "}
+        <Styled.a href={`/projects/`}>more details</Styled.a>.
       </Styled.p>
       <Styled.p>
         In my spare time, I'm a mentor at{" "}
@@ -65,9 +66,6 @@ export const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }
-    ic2s2: file(relativePath: { eq: "Mobike-IC2S2-Poster.jpg" }) {
-      publicURL
     }
   }
 `
