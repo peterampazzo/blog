@@ -15,7 +15,7 @@ const post = {
 const Card = ({ title, children }) => (
   <Styled.div
     css={css({
-      mb: 3,
+      mb: 4,
       borderStyle: `solid`,
       borderRadius: `15px`,
       borderWidth: `1px`,
@@ -36,9 +36,11 @@ export default ({ data, location }) => (
       <Styled.h1>{post.title}</Styled.h1>
       <Card title="Movi by Mobike (Analytics)">
         <Styled.p>
-          The research focus on leveraging Mobike data, a free floating bike
-          sharing system, to study urban mobility in Padova (Italy), through
-          descriptive and cluster analysis.
+          The research focus on leveraging{" "}
+          <Styled.a href="https://www.ridemovi.com/">Movi by Mobike</Styled.a>{" "}
+          (ex Mobike Italy) data, a free floating bike sharing system, to study
+          urban mobility in Padova (Italy), through descriptive and cluster
+          analysis.
         </Styled.p>
         <Styled.p>
           <b>Presentation:</b>{" "}
@@ -80,6 +82,10 @@ export default ({ data, location }) => (
           manage multiple users and rooms.
         </Styled.p>
         <Styled.p>
+          <Styled.a href="https://app.virtualdojo.it/">
+            app.virtualdojo.it
+          </Styled.a>{" "}
+          -{" "}
           <Styled.a href="https://github.com/virtualdojo/virtualdojo-rooms">
             GitHub
           </Styled.a>
