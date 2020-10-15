@@ -74,7 +74,7 @@ export default ({ data, location }) => (
           </Styled.a>{" "}
           decided to conduct its activities online during the lock-down in
           Italy. We teamed up with several clubs all over Italy and we reached
-          almost 60 partecipants. I contributed to develop{" "}
+          almost 60 participants. I contributed to develop{" "}
           <Styled.a href="https://www.virtualdojo.it">VirtualDojo</Styled.a>.
           This is open source platform which wraps{" "}
           <Styled.a href="https://jitsi.org/">Jitsi Meet</Styled.a> through its
