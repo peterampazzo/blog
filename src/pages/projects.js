@@ -18,10 +18,10 @@ const Card = ({ title, children }) => (
       mb: 4,
       borderStyle: `solid`,
       borderRadius: `15px`,
-      borderWidth: `1px`,
+      borderWidth: `0.5px`,
       borderColor: `gray`,
-      boxShadow: `-10px 10px 80px rgba(0,0,0,.30)`,
-      p: 4,
+      // boxShadow: `-10px 10px 80px rgba(0,0,0,.30)`,
+      p: [3,4],
     })}
   >
     <Styled.h2>{title}</Styled.h2>
@@ -34,11 +34,11 @@ export default ({ data, location }) => (
     <SEO title={post.title} description={post.excerpt} />
     <main>
       <Styled.h1>{post.title}</Styled.h1>
-      <Card title="Movi by Mobike (Analytics)">
+      <Card title="RideMovi Analytics">
         <Styled.p>
           The research focus on leveraging{" "}
-          <Styled.a href="https://www.ridemovi.com/">Movi by Mobike</Styled.a>{" "}
-          (ex Mobike Italy) data, a free floating bike sharing system, to study
+          <Styled.a href="https://www.ridemovi.com/">RideMovi</Styled.a>{" "}
+          (formerly Mobike) data, a free floating bike sharing system, to study
           urban mobility in Padova (Italy), through descriptive and cluster
           analysis.
         </Styled.p>
