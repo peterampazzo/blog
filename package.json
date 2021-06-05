@@ -9,15 +9,18 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.6",
     "gatsby": "^2.19.7",
     "gatsby-plugin-feed": "^2.3.27",
+    "gatsby-plugin-postcss": "^4.6.0",
     "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-remark-images": "^3.1.44",
     "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-theme-blog": "^1.2.35",
     "gatsby-transformer-remark": "^2.6.53",
+    "postcss": "^8.3.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "tailwindcss": "^2.1.4"
   }
 }

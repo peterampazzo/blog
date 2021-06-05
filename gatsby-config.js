@@ -16,10 +16,7 @@ module.exports = {
     ],
   },
   plugins: [
-    {
-      resolve: `gatsby-theme-blog`,
-      options: {},
-    },
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
