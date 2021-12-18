@@ -24,14 +24,17 @@ export default ({ data, location }) => (
           pt: 3,
         })}
       >
-        Hi, I'm Pietro.
+        Ciao! I'm Pietro.
       </Styled.p>
       <Styled.p>
-        I'm a MSc Student in Human-Centered AI at Technical University of
-        Denmark. In the last few years I worked as Full-Stack Developer.
+        I'm a MSc Student in Human-Centered AI at <Styled.a href="https://www.dtu.dk/english">Technical University of
+        Denmark</Styled.a>, in Copenhagen. In the last few years I worked as Full-Stack Developer.
       </Styled.p>
       <Styled.p>
-        I'm currently involved in a data science research which aims to leverage
+        In 2021, I joined <Styled.a href="https://www.nordea.com/en">Nordea Asset Management</Styled.a> as Student Data Engineer.
+      </Styled.p>
+      <Styled.p>
+        Currently involved in a data science research which aims to leverage
         free floating bike sharing systems' data sources to study the mobility
         of Padova (my hometown) -{" "}
         <Styled.a href={`/projects/`}>more details</Styled.a>.
