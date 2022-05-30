@@ -27,17 +27,42 @@ export default ({ data, location }) => (
         Ciao! I'm Pietro.
       </Styled.p>
       <Styled.p>
-        I'm a MSc Student in Human-Centered AI at <Styled.a href="https://www.dtu.dk/english">Technical University of
-        Denmark</Styled.a>, in Copenhagen. In the last few years I worked as Full-Stack Developer.
+        I'm an MSc Student in Human-Centered AI at{" "}
+        <Styled.a href="https://www.dtu.dk/english">
+          Technical University of Denmark
+        </Styled.a>
+        , in Copenhagen. I pursued a B.Sc. in Computer Science at Ca' Foscari
+        University of Venice.
       </Styled.p>
       <Styled.p>
-        In 2021, I joined <Styled.a href="https://www.nordea.com/en">Nordea Asset Management</Styled.a> as Student Data Engineer.
+        In the last few years, I worked as a Full-Stack Developer, leading web
+        development and working with technologies such as ReactJS.
       </Styled.p>
       <Styled.p>
-        Currently involved in a data science research which aims to leverage
-        free floating bike sharing systems' data sources to study the mobility
-        of Padova (my hometown) -{" "}
-        <Styled.a href={`/projects/`}>more details</Styled.a>.
+        In 2021, I work at{" "}
+        <Styled.a href="https://www.nordea.com/en">
+          Nordea Asset Management
+        </Styled.a>{" "}
+        as a Student Data Engineer within the trading and investment areas.
+      </Styled.p>
+      <Styled.p>
+        I'm leading a study of Human-Mobility leveraging shared-mobility data.
+        Since May 2019 I've been working on{" "}
+        <Styled.a href="https://www.ridemovi.com/">Movi</Styled.a> (formerly
+        Mobike) data for the city of Padova (
+        <Styled.a href={`/projects/`}>more details</Styled.a>). I recently
+        joined{" "}
+        <Styled.a href="https://www.dsbdigitallabs.dk/">
+          DSB Digital Lab
+        </Styled.a>{" "}
+        (part of the Danish State Railway) for my Master's thesis to study the
+        users' usage data of{" "}
+        <Styled.a href="https://www.dsbdigitallabs.dk/cases/kormit">
+          Kørmit
+        </Styled.a>
+        . This is a scooter rental service, which aims to solve the last-mile
+        problem for commuters to reach their workplace from the closest train
+        station.
       </Styled.p>
       <Styled.p>
         In my spare time, I'm a mentor at{" "}

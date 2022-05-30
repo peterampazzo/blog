@@ -55,7 +55,7 @@ export default ({ data, location }) => (
           <Styled.a href="https://katherinehoffmannpham.com/">
             Katherine Hoffmann Pham
           </Styled.a>{" "}
-          (NYU Stern School of Business),{" "}
+          (UN Global Pulse),{" "}
           <Styled.a href="https://francescorampazzo.com">
             Francesco Rampazzo
           </Styled.a>{" "}
@@ -64,6 +64,24 @@ export default ({ data, location }) => (
             Francesco Silvestri
           </Styled.a>{" "}
           (Università degli Studi di Padova)
+        </Styled.p>
+      </Card>
+      <Card title="OpenStreetMap POIs">
+        <Styled.p>
+          This Python package allows to query OpenStreetMap API using OverPy and
+          retrieve all nodes and ways included in a area. It is possible to load
+          a list of polygons using GeoPandas (JSON, GeoJSON, Shapefile are
+          supported) and loop through them.
+        </Styled.p>
+        <Styled.p>
+          The goal is to associate for every area a list of POIs retrived from
+          OpenStreetMap. The query will be performed on the bounding box built around the given
+          polygon.
+        </Styled.p>
+        <Styled.p>
+          <Styled.a href="https://github.com/peterampazzo/osm-poi">
+            GitHub
+          </Styled.a>
         </Styled.p>
       </Card>
       <Card title="VirtualDojo">
@@ -82,10 +100,6 @@ export default ({ data, location }) => (
           manage multiple users and rooms.
         </Styled.p>
         <Styled.p>
-          <Styled.a href="https://app.virtualdojo.it/">
-            app.virtualdojo.it
-          </Styled.a>{" "}
-          -{" "}
           <Styled.a href="https://github.com/virtualdojo/virtualdojo-rooms">
             GitHub
           </Styled.a>
