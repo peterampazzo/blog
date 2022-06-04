@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const NavItem = ({ title, url, label, emoji }) => (
   <div
     css={css({
-      mr: 4,
+      mr: 2,
     })}
   >
     <span role="img" aria-label={label}>
@@ -16,8 +16,7 @@ const NavItem = ({ title, url, label, emoji }) => (
       to={url}
       css={css({
         color: `inherit`,
-        ml: 2,
-        mr: 2,
+        ml: 1,
       })}
     >
       {title}
