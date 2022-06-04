@@ -37,8 +37,8 @@ export default ({ data, location }) => (
       <Card title="Movi by Mobike (Analytics)">
         <Styled.p>
           The research focus on leveraging{" "}
-          <Styled.a href="https://www.ridemovi.com/">Movi by Mobike</Styled.a>{" "}
-          (ex Mobike Italy) data, a free floating bike sharing system, to study
+          <Styled.a href="https://www.ridemovi.com/">Movi</Styled.a>{" "}
+          (formely Mobike Italy) data, a free floating bike sharing system, to study
           urban mobility in Padova (Italy), through descriptive and cluster
           analysis.
         </Styled.p>

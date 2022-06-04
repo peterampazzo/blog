@@ -6,6 +6,7 @@ import Bio from "gatsby-theme-blog/src/components/bio"
 import sun from "gatsby-theme-blog/assets/sun.png"
 import moon from "gatsby-theme-blog/assets/moon.png"
 import useBlogThemeConfig from "gatsby-theme-blog/src/hooks/configOptions"
+import Nav from "./Nav"
 
 const rootPath = `${__PATH_PREFIX__}/`
 
@@ -118,7 +119,7 @@ export default ({ children, title, ...props }) => {
             display: `flex`,
             justifyContent: `space-between`,
             alignItems: `center`,
-            mb: props.location.pathname === rootPath ? 3 : 1,
+            mb: props.location.pathname === rootPath ? 3 : 2,
           })}
         >
           <Title {...props}>{title}</Title>
@@ -127,6 +128,7 @@ export default ({ children, title, ...props }) => {
           {switchToggle}
         </div>
         {props.location.pathname === rootPath && <Bio />}
+        <Nav />
       </div>
     </header>
   )

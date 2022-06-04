@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { Styled, css, Flex } from "theme-ui"
@@ -45,33 +44,6 @@ const Bio = () => {
           <BioContent />
         </Styled.div>
       </Flex>
-      <nav
-        css={css({
-          display: `flex`,
-          justifyContent: `flex-start`,
-          alignItems: `left`,
-        })}
-      >
-        <Styled.a
-          as={Link}
-          css={css({
-            color: `inherit`,
-          })}
-          to={`/about/`}
-        >
-          About
-        </Styled.a>
-        <Styled.a
-          as={Link}
-          css={css({
-            color: `inherit`,
-            ml: 4,
-          })}
-          to={`/projects/`}
-        >
-          Projects
-        </Styled.a>
-      </nav>
     </div>
   )
 }
