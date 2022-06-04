@@ -6,7 +6,7 @@ import Bio from "gatsby-theme-blog/src/components/bio"
 import sun from "gatsby-theme-blog/assets/sun.png"
 import moon from "gatsby-theme-blog/assets/moon.png"
 import useBlogThemeConfig from "gatsby-theme-blog/src/hooks/configOptions"
-import Nav from "./Nav"
+import Nav from "./nav"
 
 const rootPath = `${__PATH_PREFIX__}/`
 
