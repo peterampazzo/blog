@@ -39,7 +39,7 @@ export default ({ data, location }) => (
         development and working with technologies such as ReactJS.
       </Styled.p>
       <Styled.p>
-        In 2021, I work at{" "}
+        In 2021, I joined at{" "}
         <Styled.a href="https://www.nordea.com/en">
           Nordea Asset Management
         </Styled.a>{" "}
