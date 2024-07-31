@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://peterampazzo.com/sitemap-index.xml
