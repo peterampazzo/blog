@@ -10,7 +10,7 @@ const config: GatsbyConfig = {
     siteTitleAlt: `Pietro Rampazzo`,
     siteHeadline: `Pietro Rampazzo`,
     siteUrl: `https://peterampazzo.com`,
-    siteDescription: `Software and Data Engineer from Padova, working in Copenhagen`,
+    siteDescription: `Data Engineer from Padova, working in Copenhagen`,
     siteLanguage: `en`,
     author: `@peterampazzo`,
   },
@@ -35,8 +35,8 @@ const config: GatsbyConfig = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/peterampazzo`,
+            name: `BlueSky`,
+            url: `https://bsky.app/profile/peterampazzo.com`,
           },
           {
             name: `Github`,
@@ -49,6 +49,18 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Pietro Rampazzo`,
+        short_name: `Pietro`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: `static/favicon.jpeg`,
       },
     },
   ].filter(Boolean) as Array<PluginRef>,
