@@ -1,0 +1,41 @@
+.project-card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    /* border: 1px solid #888;*/
+}
+
+.project-card h2 {
+    text-align: center;
+    /* font-style: italic; */
+}
+
+.project-card h3.project-date {
+    text-align: center;
+    text-transform: uppercase; /* All capital letters */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #555; /* Adjust color as needed */
+  }
+  
+
+.card-content {
+    padding: 15px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.separator {
+    border: none;
+    border-top: 2px dotted #ccc; /* Dotted line */
+    margin: 40px 0;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .separator {
+      border-top: 2px dotted #555; /* Darker dotted line for dark mode */
+    }
+}

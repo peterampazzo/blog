@@ -2,27 +2,9 @@
 title: Projects
 slug: "/projects"
 ---
+import Project from './ProjectContainer';
 
-## Movi by Mobike (Analytics)
-
-The research focus on leveraging [Ride Movi](https://www.ridemovi.com/) (formely Mobike Italy) data, 
-a free floating bike sharing system, to study urban mobility in Padova (Italy), through descriptive and cluster 
-analysis.
-
-**Presentation:**
-
-> I Want to Ride my Bicycle: Leveraging Mobike Data 
-> to Study Mobility in Padova, Italy
-
-#### [Poster](/Mobike-IC2S2-Poster.jpg) - [Preprint](https://osf.io/preprints/socarxiv/bd8p4)
-
-**Co-authors:**
-[Katherine Hoffmann Pham](https://katherinehoffmannpham.com/) (UN Global Pulse), [Francesco Rampazzo](https://francescorampazzo.com)
-(University of Oxford), [Francesco Silvestri](http://www.dei.unipd.it/~silvestri/) (Università degli Studi di Padova).
-
----
-
-## Living in Denmark
+<Project title="Living in Denmark" date="November 2021 - PRESENT"> 
 
 Moving is not always easy, and moving to a new country can be even more challenging 
 if the main language is not your mother tongue.  Over time, I have expanded this list, initially with resources for finding 
@@ -30,12 +12,32 @@ places to live in Copenhagen, and occasionally adding other useful resources and
 
 I maintain this list on GitHub to make it easier for people to settle into life in Denmark.
 
+<h3 className="txt-center">[Github](https://github.com/peterampazzo/living-in-denmark)</h3>
 
-#### [Github](https://github.com/peterampazzo/living-in-denmark)
+</Project>
 
----
+<div className="separator"></div>
 
-## OpenStreetMap POIs
+<Project title="Movi by Mobike (Analytics)" date="May 2019 - August 2022">
+  The research focus on leveraging [Ride Movi](https://www.ridemovi.com/) (formely Mobike Italy) data, 
+  a free floating bike sharing system, to study urban mobility in Padova (Italy), through descriptive and cluster 
+  analysis.
+
+  **Presentation:**
+
+  > I Want to Ride my Bicycle: Leveraging Mobike Data 
+  > to Study Mobility in Padova, Italy
+
+  <h3 className="txt-center">[Poster](/Mobike-IC2S2-Poster.jpg) - [Preprint](https://osf.io/preprints/socarxiv/bd8p4)</h3>
+
+  **Co-authors:**
+  [Katherine Hoffmann Pham](https://katherinehoffmannpham.com/) (UN Global Pulse), [Francesco Rampazzo](https://francescorampazzo.com)
+  (University of Oxford), [Francesco Silvestri](http://www.dei.unipd.it/~silvestri/) (Università degli Studi di Padova).
+</Project>
+
+<div className="separator"></div>
+
+<Project title="OpenStreetMap POIs" date="September 2021 - December 2021"> 
 
 This Python package allows to query OpenStreetMap API using OverPy and retrieve all nodes and ways included in a area. 
 It is possible to load a list of polygons using GeoPandas (JSON, GeoJSON, Shapefile are supported) and loop through them.
@@ -43,11 +45,12 @@ It is possible to load a list of polygons using GeoPandas (JSON, GeoJSON, Shapef
 The goal is to associate for every area a list of POIs retrived from OpenStreetMap. 
 The query will be performed on the bounding box built around the given polygon.
 
-#### [GitHub](https://github.com/peterampazzo/osm-poi)
+<h3 className="txt-center">[GitHub](https://github.com/peterampazzo/osm-poi)</h3>
+</Project>
 
----
+<div className="separator"></div>
 
-## VirtualDojo
+<Project title="VirtualDojo" date="March 2020 - June 2020"> 
 
 Due to COVID-19, [CoderDojo Padova](http://www.coderdojopadova.it) decided to conduct 
 its activities online during the lock-down in Italy. We teamed up with several clubs all over Italy 
@@ -56,17 +59,18 @@ and we reached almost 60 participants. I contributed to develop **VirtualDojo**.
 This is open source platform which wraps [Jitsi Meet](https://jitsi.org/) through its
 public API and offers a realtime dashboard where it is possible to manage multiple users and rooms.
 
-#### [GitHub](https://github.com/virtualdojo/virtualdojo-rooms)
+<h3 className="txt-center">[GitHub](https://github.com/virtualdojo/virtualdojo-rooms)</h3>
+</Project>
 
----
+<div className="separator"></div>
 
-## 200 Metri da Casa
+<Project title="200 Metri da Casa" date="March 2020"> 
 
 During the COVID-19 lockdown, people living in the region of Veneto
 were allowed to walk around a radius of 200 meters from their house.
 This webpage renders a map with their location and the allowed area.
 
-#### [200-metri-da-casa.netlify.com](https://200-metri-da-casa.netlify.com) / [GitHub](https://github.com/peterampazzo/200-metri-da-casa)
+<h3 className="txt-center">[200-metri-da-casa.netlify.com](https://200-metri-da-casa.netlify.com) - [GitHub](https://github.com/peterampazzo/200-metri-da-casa)</h3>
 
 **Impact:**
 [Ca' Foscari University of Venice](https://unive.it/pag/14024/?tx_news_pi1[news]=8760&cHash=ff9e0265f00124248397a6e2b9340aae) -
@@ -76,3 +80,5 @@ This webpage renders a map with their location and the allowed area.
 [Prima Venezia](https://primavenezia.it/cultura/come-calcolo-200-metri-da-casa-lapp-che-ti-aiuta-creata-a-ca-foscari/) - 
 [Runner's World](https://www.runnersworld.it/coronavirus-come-misurare-la-distanza-dei-200-metri-da-casa-9250) - 
 [Corriere dello Sport](https://www.corrieredellosport.it/news/altri-sport/running/2020/04/09-68714327/restrizioni_nasce_la_app_per_rimanere_nei_200_metri_da_casa_/)
+
+</Project>
