@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Github, Linkedin, Twitter, Mail, MapPin } from "lucide-react"
+import { Github, Linkedin, Mail, MapPin } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export function AboutSection() {
@@ -52,7 +52,7 @@ export function AboutSection() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com/in/pietrorampazzo"
+              href="https://linkedin.com/in/peterampazzo"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full p-2 text-muted-foreground transition-all hover:bg-primary/10 hover:text-primary"
@@ -61,16 +61,7 @@ export function AboutSection() {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="https://twitter.com/peterampazzo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full p-2 text-muted-foreground transition-all hover:bg-primary/10 hover:text-primary"
-              aria-label="Twitter"
-            >
-              <Twitter className="h-5 w-5" />
-            </a>
-            <a
-              href="mailto:hello@peterampazzo.com"
+              href="mailto:pietro@rampazzo.eu"
               className="rounded-full p-2 text-muted-foreground transition-all hover:bg-primary/10 hover:text-primary"
               aria-label="Email"
             >
