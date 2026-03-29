@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative">
       {/* Animated gradient background blobs */}
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <div className="animate-float absolute -left-40 -top-40 h-80 w-80 rounded-full bg-gradient-to-br from-primary/30 to-blue-400/20 blur-3xl" />
@@ -18,7 +18,7 @@ export default function Home() {
       <div className="pointer-events-none fixed inset-0 -z-10 dot-pattern" />
 
       <Header />
-      <main className="relative mx-auto max-w-2xl px-6 pt-14">
+      <main className="relative mx-auto max-w-2xl px-6 pt-14 pb-12">
         <AboutSection />
         <hr className="border-border/40" />
         <ProjectsSection />
