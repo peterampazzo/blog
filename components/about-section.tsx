@@ -22,7 +22,7 @@ export function AboutSection() {
         >
           <div className="relative size-[180px] overflow-hidden rounded-full">
             <Image
-              src="https://raw.githubusercontent.com/peterampazzo/blog/master/content/pages/about/profile.jpeg"
+              src="./DSC09226-crop.jpg"
               alt="Pietro Rampazzo"
               fill
               className="object-cover"
@@ -34,7 +34,7 @@ export function AboutSection() {
               Pietro Rampazzo
             </h1>
             <p className="mt-1 text-muted-foreground">
-              Software & Data Engineer
+              Software Engineer
             </p>
             <p className="mt-1 flex items-center justify-center gap-1 text-sm text-muted-foreground lg:justify-start">
               <MapPin className="h-3.5 w-3.5" />
@@ -76,8 +76,9 @@ export function AboutSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
+          <p className="text-2xl font-bold text-primary text-center">Ciao! 👋</p>
           <p>
-            <span className="font-medium text-foreground">Ciao!</span> I&apos;m Pietro, an Italian software engineer currently based in 
+            I&apos;m Pietro, an Italian software engineer currently based in 
             Copenhagen, Denmark. I work at the intersection of{" "}
             <span className="font-medium text-primary">software engineering</span> and{" "}
             <span className="font-medium text-primary">data engineering</span>, 

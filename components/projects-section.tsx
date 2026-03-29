@@ -31,7 +31,7 @@ export function ProjectsSection() {
       <p className="mt-1 text-sm text-muted-foreground">
         Some things I&apos;ve built and contributed to
       </p>
-      <div className="mt-8 space-y-4">
+      <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {projects.map((project) => (
           <a
             key={project.title}
