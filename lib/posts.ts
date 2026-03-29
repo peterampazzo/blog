@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const postsDirectory = path.join(process.cwd(), "content/posts");
+const postsDirectory = path.join(/*turbopackIgnore: true*/ process.cwd(), "content/posts");
 
 export interface Post {
   slug: string;

@@ -7,11 +7,11 @@ export async function GET(
   { params }: { params: Promise<{ path: string[] }> }
 ) {
   const { path: imagePath } = await params;
-  const filePath = path.join(process.cwd(), 'content', 'posts', ...imagePath);
+  const filePath = path.join(/*turbopackIgnore: true*/ process.cwd(), 'content', 'posts', ...imagePath);
 
   // Security: Prevent directory traversal
   const realPath = fs.realpathSync(filePath);
-  const contentDir = fs.realpathSync(path.join(process.cwd(), 'content', 'posts'));
+  const contentDir = fs.realpathSync(path.join(/*turbopackIgnore: true*/ process.cwd(), 'content', 'posts'));
   
   if (!realPath.startsWith(contentDir)) {
     return NextResponse.json({ error: 'Not found' }, { status: 404 });
