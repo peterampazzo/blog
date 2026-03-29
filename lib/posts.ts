@@ -28,18 +28,21 @@ export function getAllPosts(): Post[] {
     let slug: string;
 
     if (entry.isDirectory()) {
-      // Folder-based post: content/posts/my-post/index.md
-      const indexPath = path.join(postsDirectory, entry.name, "index.md");
+      // Folder-based post: content/posts/my-post/index.md(x)
+      let indexPath = path.join(postsDirectory, entry.name, "index.mdx");
+      if (!fs.existsSync(indexPath)) {
+        indexPath = path.join(postsDirectory, entry.name, "index.md");
+      }
       if (fs.existsSync(indexPath)) {
         filePath = indexPath;
         slug = entry.name;
       } else {
         continue;
       }
-    } else if (entry.name.endsWith(".md")) {
-      // File-based post: content/posts/my-post.md
+    } else if (entry.name.endsWith(".md") || entry.name.endsWith(".mdx")) {
+      // File-based post: content/posts/my-post.md(x)
       filePath = path.join(postsDirectory, entry.name);
-      slug = entry.name.replace(/\.md$/, "");
+      slug = entry.name.replace(/\.(md|mdx)$/, "");
     } else {
       continue;
     }
@@ -69,8 +72,11 @@ export function getPostBySlug(slug: string): Post | null {
     return null;
   }
 
-  // Try folder-based first: content/posts/my-post/index.md
-  const folderPath = path.join(postsDirectory, slug, "index.md");
+  // Try folder-based first: content/posts/my-post/index.md(x)
+  let folderPath = path.join(postsDirectory, slug, "index.mdx");
+  if (!fs.existsSync(folderPath)) {
+    folderPath = path.join(postsDirectory, slug, "index.md");
+  }
   if (fs.existsSync(folderPath)) {
     const fileContents = fs.readFileSync(folderPath, "utf8");
     const { data, content } = matter(fileContents);
@@ -85,8 +91,11 @@ export function getPostBySlug(slug: string): Post | null {
     };
   }
 
-  // Try file-based: content/posts/my-post.md
-  const filePath = path.join(postsDirectory, `${slug}.md`);
+  // Try file-based: content/posts/my-post.md(x)
+  let filePath = path.join(postsDirectory, `${slug}.mdx`);
+  if (!fs.existsSync(filePath)) {
+    filePath = path.join(postsDirectory, `${slug}.md`);
+  }
   if (fs.existsSync(filePath)) {
     const fileContents = fs.readFileSync(filePath, "utf8");
     const { data, content } = matter(fileContents);
