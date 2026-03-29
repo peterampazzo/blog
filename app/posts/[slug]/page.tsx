@@ -38,7 +38,7 @@ export default async function PostPage({ params }: PostPageProps) {
   }
 
   return (
-    <main className="mx-auto max-w-2xl px-6 py-16">
+    <main className="mx-auto max-w-2xl px-6 py-16 pt-14">
       <Link
         href="/posts"
         className="mb-8 inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -67,7 +67,7 @@ export default async function PostPage({ params }: PostPageProps) {
           )}
         </header>
 
-        <MarkdownContent content={post.content} />
+        <MarkdownContent content={post.content} slug={slug} />
       </article>
     </main>
   );

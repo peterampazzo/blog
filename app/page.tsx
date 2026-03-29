@@ -18,7 +18,7 @@ export default function Home() {
       <div className="pointer-events-none fixed inset-0 -z-10 dot-pattern" />
 
       <Header />
-      <main className="relative mx-auto max-w-2xl px-6">
+      <main className="relative mx-auto max-w-2xl px-6 pt-14">
         <AboutSection />
         <hr className="border-border/40" />
         <ProjectsSection />

@@ -14,7 +14,7 @@ export default function PostsPage() {
   const posts = getAllPosts()
 
   return (
-    <main className="mx-auto min-h-screen max-w-2xl px-6 py-12">
+    <main className="mx-auto min-h-screen max-w-2xl px-6 py-12 pt-14">
       <Link
         href="/"
         className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
