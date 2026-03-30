@@ -90,14 +90,13 @@ export function MarkdownContent({ content, slug }: MarkdownContentProps) {
           hr: () => <hr className="my-8 border-border" />,
           img: ({ src, alt }) => {
             // Resolve relative image paths
-            let imageSrc = src || '';
+            let imageSrc = typeof src === 'string' ? src : '';
             if (slug && imageSrc.startsWith('./')) {
               imageSrc = `/api/images/${slug}/${imageSrc.substring(2)}`;
-            } else if (slug && !imageSrc.startsWith('http') && !imageSrc.startsWith('/')) {
+            } else if (slug && imageSrc && !imageSrc.startsWith('http') && !imageSrc.startsWith('/')) {
               imageSrc = `/api/images/${slug}/${imageSrc}`;
             }
             return (
-              // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={imageSrc}
                 alt={alt || ""}
