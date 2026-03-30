@@ -45,14 +45,16 @@ export function ProjectsSection() {
       <p className="mt-1 text-sm text-muted-foreground">
         Some things I&apos;ve built and contributed to
       </p>
-      <div className="mt-8 grid gap-4 sm:grid-cols-2">
-        {projects.map((project) => (
+      <div className="mt-8 grid gap-4 grid-cols-1 sm:grid-cols-2">
+        {projects.map((project, index) => (
           <a
             key={project.title}
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group block rounded-lg border border-border/50 p-4 transition-all duration-200 hover:border-primary/30 hover:bg-primary/5 hover:shadow-sm"
+            className={`group block rounded-lg border border-border/50 p-4 transition-all duration-200 hover:border-primary/30 hover:bg-primary/5 hover:shadow-sm ${
+              index === 0 ? "sm:col-span-2" : ""
+            }`}
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1">
