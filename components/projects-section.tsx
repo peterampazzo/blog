@@ -2,25 +2,39 @@ import { ArrowUpRight } from "lucide-react"
 
 const projects = [
   {
-    title: "Data Pipeline Toolkit",
-    description:
-      "A collection of tools for building and managing data pipelines with Python and Apache Airflow.",
-    tags: ["Python", "Airflow", "Data Engineering"],
-    link: "https://github.com/peterampazzo",
+    title: "Living in Denmark",
+    description: 
+      "A curated open-source repository of essential resources for expats. Features practical guides on housing, documentation, and local integration.",
+    tags: ["Community"],
+    link: "https://github.com/peterampazzo/living-in-denmark",
   },
   {
-    title: "Personal Blog",
+    title: "Movi by Mobike",
     description:
-      "My personal blog built with Gatsby and Markdown. Features articles about software engineering and data.",
-    tags: ["Gatsby", "React", "Markdown"],
-    link: "https://github.com/peterampazzo/blog",
+      "A data science study analyzing urban mobility patterns in Padova. Leverages descriptive and cluster analysis to optimize bike-sharing fleet distribution.",
+    tags: ["Data Science", "Mobility", "Python"],
+    link: "https://osf.io/preprints/socarxiv/bd8p4",
   },
   {
-    title: "Open Source Contributions",
+    title: "OpenStreetMap POIs",
     description:
-      "Various contributions to open source projects in the data and web development ecosystem.",
-    tags: ["Open Source", "Community"],
-    link: "https://github.com/peterampazzo",
+      "A Python package designed to automate the retrieval of Points of Interest. Utilizes OverPy and GeoPandas to query the OSM API within specific polygons.",
+    tags: ["Geospatial", "Python"],
+    link: "https://github.com/peterampazzo/osm-poi",
+  },
+  {
+    title: "200 Metri da Casa",
+    description:
+      "A viral interactive map helping citizens visualize lockdown radius restrictions. Built with Leaflet.js and featured in major national news outlets.",
+    tags: ["Community", "Social Impact"],
+    link: "https://github.com/peterampazzo/200-metri-da-casa",
+  },
+  {
+    title: "VirtualDojo",
+    description:
+      "A custom dashboard for CoderDojo Padova to facilitate online learning. Integrates the Jitsi Meet API to manage multiple virtual classrooms in one place.",
+    tags: ["React", "Node.js"],
+    link: "https://github.com/virtualdojo/virtualdojo-rooms",
   },
 ]
 

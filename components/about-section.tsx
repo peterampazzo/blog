@@ -15,10 +15,9 @@ export function AboutSection() {
     <section id="about" className="py-16">
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-16">
         {/* Left column - Photo and social links (sticky on desktop) */}
-        <div 
-          className={`flex flex-col items-center gap-4 lg:sticky lg:top-24 lg:h-fit lg:items-start transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
+        <div
+          className={`flex flex-col items-center gap-4 lg:sticky lg:top-24 lg:h-fit lg:items-start transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
         >
           <div className="relative size-[180px] overflow-hidden rounded-full">
             <Image
@@ -71,34 +70,25 @@ export function AboutSection() {
         </div>
 
         {/* Right column - Bio content */}
-        <div 
-          className={`flex-1 space-y-4 text-[15px] leading-relaxed text-foreground/90 lg:max-w-xl transition-all duration-700 delay-150 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
+        <div
+          className={`flex-1 space-y-4 text-[15px] leading-relaxed text-foreground/90 lg:max-w-xl transition-all duration-700 delay-150 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
         >
-          <p className="text-2xl font-bold text-primary text-center">Ciao! 👋</p>
+          <p className="text-2xl font-bold text-primary text-center">Ciao! 👋 I&apos;m Pietro.</p>
           <p>
-            I&apos;m Pietro, an Italian software engineer currently based in 
-            Copenhagen, Denmark. I work at the intersection of{" "}
-            <span className="font-medium text-primary">software engineering</span> and{" "}
-            <span className="font-medium text-primary">data engineering</span>, 
-            building systems that transform raw data into actionable insights.
+            I am a Software Engineer based in Copenhagen. My work focuses on bridging the gap between   <span className="font-medium text-primary">software engineering</span> and{" "}
+            <span className="font-medium text-primary">data engineering</span>.
+           </p>
+           <p> 
+            Currently on a data modernization journey where I build resilient, cloud-first integrations that enable users to consume and leverage data effectively.
           </p>
           <p>
-            My journey in tech started with a curiosity for how things work 
-            under the hood. Over the years, I&apos;ve had the opportunity to work 
-            on diverse projects ranging from data pipelines and analytics 
-            platforms to full-stack web applications.
+            Moving to Denmark has changed my habits. Since the country is flat,
+            I've traded mountain hiking in the Dolomites for road cycling and running.
+            When the weather isn't ideal, I enjoy bouldering or a game of padel.
           </p>
           <p>
-            I believe in writing clean, maintainable code and sharing knowledge 
-            with the community. This blog is where I document my learnings, 
-            experiments, and thoughts on software development.
-          </p>
-          <p>
-            When I&apos;m not coding, you can find me exploring the Nordic lifestyle,
-            biking around Copenhagen, or enjoying a good cup of coffee while 
-            reading about new technologies.
+            Outside of work, I enjoy photography (occasionally publishing on <a href="https://unsplash.com/@peterampazzo" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Unsplash</a>) as well as <span className="font-medium text-primary">turning hygge into ravioli</span> by making homemade pasta for a good cause with <a href="https://www.instagram.com/marediravioli/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Mare di Ravioli</a>.
           </p>
         </div>
       </div>
