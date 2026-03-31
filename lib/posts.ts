@@ -35,14 +35,20 @@ export function getAllPosts(): Post[] {
       }
       if (fs.existsSync(indexPath)) {
         filePath = indexPath;
-        slug = entry.name;
+        slug = sanitizeSlug(entry.name);
+        if (!slug) {
+          continue;
+        }
       } else {
         continue;
       }
     } else if (entry.name.endsWith(".md") || entry.name.endsWith(".mdx")) {
       // File-based post: content/posts/my-post.md(x)
       filePath = path.join(postsDirectory, entry.name);
-      slug = entry.name.replace(/\.(md|mdx)$/, "");
+      slug = sanitizeSlug(entry.name.replace(/\.(md|mdx)$/, ""));
+      if (!slug) {
+        continue;
+      }
     } else {
       continue;
     }
@@ -116,4 +122,11 @@ export function getPostBySlug(slug: string): Post | null {
 function formatDate(date: string | Date): string {
   const d = new Date(date);
   return d.toISOString().split("T")[0];
+}
+
+// Ensure that slugs derived from filesystem entries are URL-safe.
+// This limits characters to lowercase letters, digits, and dashes.
+function sanitizeSlug(raw: string): string {
+  const normalized = raw.trim().toLowerCase().replace(/\s+/g, "-");
+  return normalized.replace(/[^a-z0-9-]/g, "");
 }
