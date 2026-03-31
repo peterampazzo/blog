@@ -1,6 +1,6 @@
 [build]
   command = "pnpm run build"
-  publish = ".next"
+  publish = "out"
 
 [functions]
   directory = ".netlify/functions"
@@ -9,15 +9,3 @@
   from = "/_next/static/*"
   to = "/:splat"
   status = 200
-
-[[redirects]]
-  from = "/_next/image"
-  to = "/.netlify/images"
-  status = 200
-  query = { url = ":url", w = ":width", q = ":quality" }
-
-[[redirects]]
-  from = "/_ipx/*"
-  to = "/.netlify/images"
-  status = 200
-  query = { url = ":url", w = ":width", q = ":quality" }
