@@ -9,3 +9,13 @@
   from = "/_next/static/*"
   to = "/:splat"
   status = 200
+
+[[redirects]]
+  from = "/about/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/projects/*"
+  to = "/"
+  status = 301
