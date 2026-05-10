@@ -2,6 +2,13 @@ import { ArrowUpRight } from "lucide-react"
 
 const projects = [
   {
+    title: "Ordsamling",
+    description: 
+      "An AI-native development experiment: a Danish learning app built to capture and practice new words. It features an interactive Quiz system and a decoupled Google Sheets API backend.",
+    tags: ["AI-First Dev", "Community"],
+    link: "https://ordsamling.pages.dev/",
+  },
+  {
     title: "Living in Denmark",
     description: 
       "A curated open-source repository of essential resources for expats. Features practical guides on housing, documentation, and local integration.",
@@ -53,7 +60,7 @@ export function ProjectsSection() {
             target="_blank"
             rel="noopener noreferrer"
             className={`group block rounded-lg border border-border/50 p-4 transition-all duration-200 hover:border-primary/30 hover:bg-primary/5 hover:shadow-sm ${
-              index === 0 ? "sm:col-span-2" : ""
+              index === 0 ? "" : ""
             }`}
           >
             <div className="flex items-start justify-between gap-4">
